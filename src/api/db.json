@@ -1,0 +1,96 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "imageUrl": "https://applehome.te.ua/wp-content/uploads/2021/09/iphone-13-pink-select-2021.png",
+        "name": "Apple iPhone 14 Pro Max",
+        "count": 4,
+        "size": {
+          "width": 363,
+          "height": 241
+        },
+        "weight": "1.78kg",
+        "comments": [ { "commentId": 1 } ]
+      },
+      {
+        "id": 2,
+        "imageUrl": "https://hotline.ua/img/tx/370/3708775135.jpg",
+        "name": "Samsung Galaxy S23 Ultra",
+        "count": 2,
+        "size": {
+          "width": 359,
+          "height": 252
+        },
+        "weight": "2.25kg",
+        "comments": [ { "commentId": 2 } ]
+      },
+      {
+        "id": 3,
+        "imageUrl": "https://hotline.ua/img/tx/396/3964877205.jpg",
+        "name": "Vivo X90 Pro",
+        "count": 7,
+        "size": {
+          "width": 358,
+          "height": 236
+        },
+        "weight": "1.75kg",
+        "comments": [ { "commentId": 3 } ]
+      },
+      {
+        "id": 4,
+        "imageUrl": "https://content2.rozetka.com.ua/goods/images/big/292002510.png",
+        "name": "Samsung Galaxy Z Fold 4",
+        "count": 18,
+        "size": {
+          "width": 360,
+          "height": 256
+        },
+        "weight": "2.3kg",
+        "comments": []
+      },
+      {
+        "id": 5,
+        "imageUrl": "https://m.media-amazon.com/images/I/81ww2RdmvzL.jpg",
+        "name": "OPPO Find N2 Flip",
+        "count": 11,
+        "size": {
+          "width": 362,
+          "height": 237
+        },
+        "weight": "2.1kg",
+        "comments": []
+      },
+      {
+        "id": 6,
+        "imageUrl": "https://hotline.ua/img/tx/348/3483030275.jpg",
+        "name": "Google Pixel 7 Pro",
+        "count": 12,
+        "size": {
+          "width": 363,
+          "height": 238
+        },
+        "weight": "1.65kg",
+        "comments": []
+      }
+    ],
+    "comments": [
+      {
+        "id": 1,
+        "productId": 1,
+        "description": "Сomment for Acer Aspire 3",
+        "date": "14:00 22.08.2021"
+      },
+      {
+        "id": 2,
+        "productId": 2,
+        "description": "Сomment for Lenovo IdeaPad Gaming 3",
+        "date": "17:28 22.08.2021"
+      },
+      {
+        "id": 3,
+        "productId": 3,
+        "description": "Comment for ASUS L1500CDA",
+        "date": "10:42 22.08.2021"
+      }
+    ]
+  }
