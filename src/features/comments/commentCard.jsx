@@ -9,8 +9,8 @@ export function CommentCard({idCM, idPH}){
     const handleDeleteComment= ()=>{
         dispatch(deleteOneCM(idCM))
     }
-
-    if(selectedCommet.productId === idPH){
+console.log(typeof(idPH))
+    if(selectedCommet.productId === Number(idPH)){
       
         return(
             <div className="w-full p-[2%] h-[10%] border-2 border-gray-600 rounded-3xl mb-[1.5%] flex justify-between">

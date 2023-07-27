@@ -6,7 +6,6 @@ import { useState } from 'react';
 
 export function PhoneList(){
  
-  const [sortedIdArray,setSortedArray] = useState([]);
   const allPhones = useSelector(selectAllPhones);
   const idsPhones = useSelector(selectPhoneIds)    
   const sortingState = useSelector(state=>state.phones.sortingState);
@@ -22,34 +21,34 @@ export function PhoneList(){
     }
     return 0;
   }
-
-
-useEffect(()=>{
-  console.log("B");   
   const smth =[...idsPhones].sort((a,b)=>{
-        const objA = allPhones.find((obj) => obj.id === a);
-        const objB = allPhones.find((obj) => obj.id === b);
-        if (sortingState === 'name') { return sortByObjectName(objA, objB);}
-        else if(sortingState === "count"){ return objB.count - objA.count;}
-        else if(sortingState === "weight"){const weightA = parseFloat(objA.weight);
-          const weightB = parseFloat(objB.weight);
-          return weightB - weightA;}
-          else{ return 0}
-          
-      })
+    const objA = allPhones.find((obj) => obj.id === a);
+    const objB = allPhones.find((obj) => obj.id === b);
+    if (sortingState === 'name') { return sortByObjectName(objA, objB);}
+    else if(sortingState === "count"){ return objB.count - objA.count;}
+    else if(sortingState === "weight"){const weightA = parseFloat(objA.weight);
+      const weightB = parseFloat(objB.weight);
+      return weightB - weightA;}
+      else{ return 0}
+      
+  })
+    let phoneCards;
       if (sortingState === 'default') {
-        setSortedArray(idsPhones);
-     
+        
+         phoneCards =  idsPhones.map(a =>{
+        
+      return <PhoneCard key={a} idPH={a} /> ;
+    })
       }else{
-        setSortedArray(smth);
+        
+        phoneCards =  smth.map(a =>{
+        
+          return <PhoneCard key={a} idPH={a} /> ;
+        })
       }
 
-    }, [sortingState, idsPhones, allPhones]);
+     
  
-      const phoneCards =  sortedIdArray.map(a =>{
-        
-        return <PhoneCard key={a} idPH={a} /> ;
-      })
       
  
       return (

@@ -9,10 +9,11 @@ export function PhoneCard({ idPH }) {
 
 
     const phoneOne = useSelector((state) => selectPhoneById(state, idPH));
-
+   
  
     const [open, setOpen] = useState(false);
     const [modalType, setModalType] = useState(null);
+
     function handleOpen(type){
         setModalType(type);
         setOpen(true);
